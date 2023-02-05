@@ -1,0 +1,186 @@
+body {
+    overflow-y: auto;
+}
+
+.cadastro {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.cadastro-popup {
+    flex-wrap: wrap;
+    animation-name: fade-modal;
+    animation-duration: .9s;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    max-width: 650px;
+    max-height: 750px;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    background: #fff;
+    position: relative;
+    background-image: url(../images/onda-4-escura.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cadastro-popup-fechar {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.cadastro-popup-formulario-titulo {
+    margin-top: 2%;
+    margin-bottom: 3%;
+    width: 100%;
+    text-align: center;
+}
+
+.cadastro-popup-formulario-titulo-maior {
+    line-height: 40px;
+    font-size: 48pt;
+    font-weight: 600;
+    text-shadow: 0px 6px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cadastro-popup-formulario-titulo-menor {
+    font-size: 18pt;
+    font-weight: 400;
+    text-shadow: 0px 6px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cadastro-popup-formulario select {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 265px;
+    padding: 8px;
+    color: #000;
+    font-size: 12pt;
+    font-weight: 500;
+    border-style: none;
+    background: #dbdbdb6c;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.07);
+}
+
+.cadastro-popup-formulario select:invalid {
+    color: gray;
+}
+
+.cadastro-popup-formulario input {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 250px;
+    padding: 8px;
+    font-size: 12pt;
+    font-weight: 500;
+    border-style: none;
+    background: #dbdbdb6c;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.07);
+}
+
+.cadastro-popup-formulario input[type="checkbox"] {
+    width: 25px;
+    height: 25px;
+    float: left;
+    margin-right: 5%;
+} 
+
+.cadastro-popup-formulario-rodape input[type="submit"] {
+    width: 200px;
+    padding: 8px;
+    font-size: 16pt;
+    font-weight: 500;
+    border-style: none;
+    background-color: #255EF0;
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.07);
+    border: none;
+    color: #fff;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.cadastro-popup-formulario-rodape input[type="submit"]:hover {
+    background-color: #fff;
+    color: #255EF0;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+.cadastro-popup-formulario-rodape input[type="button"] {
+    width: 200px;
+    padding: 8px;
+    font-size: 16pt;
+    font-weight: 500;
+    border-style: none;
+    background-color: #255EF0;
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.07);
+    border: none;
+    color: #fff;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.cadastro-popup-formulario-rodape input[type="button"]:hover {
+    background-color: #fff;
+    color: #255EF0;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+.cadastro-popup-formulario-linha {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2%;  
+}
+
+.cadastro-popup-formulario-termos {
+    display: flex;
+    font-size: 12pt;
+    margin: 2% auto 2% auto;
+    text-align: center;
+    width: 90%;
+}
+
+.cadastro-popup-formulario-termos a {
+    text-decoration: none;
+    color: #255EF0;
+}
+
+.cadastro-popup-formulario-termos a:hover {
+    text-decoration: underline;
+}
+
+.botao-termos {
+    align-self: center;
+    height: 100%;
+}
+
+.cadastro-popup-formulario-rodape {
+    display: flex;
+    justify-content: space-around;
+}
+
+.input-label label {
+    margin-left: 20px;
+    display: flex;
+    width: 100%;
+}

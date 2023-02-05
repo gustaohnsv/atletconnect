@@ -1,0 +1,49 @@
+@keyframes input-error {
+    25% {
+        transform: translateX(5px)
+    };
+
+    50% {
+        transform: translateX(-5px);
+    };
+
+    75% {
+        transform: translateX(5px)
+    };
+}
+
+@keyframes fade {
+    from { 
+        opacity: 0;
+        transform: translateX(-60px);
+    }
+    to   { 
+        opacity: 1;
+        transform: translateX(0px); 
+    }
+}
+
+@keyframes fade-modal {
+    from { 
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to   { 
+        opacity: 1;
+        transform: translateX(0px); 
+    }
+}
+
+@keyframes motion-background {
+    25% {
+        background-position: 0%;
+    };
+
+    50% {
+        background-position: 100%;
+    };
+
+    75% {
+        background-position: 0%;
+    };
+}

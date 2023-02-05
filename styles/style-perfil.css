@@ -1,0 +1,232 @@
+@charset "utf-8";
+@import url(animacoes.css);
+
+html {
+    overflow-y: hidden;
+}
+
+body {
+    height: 100vh;
+    background-image: url(../images/fundo.svg);
+    animation-name: motion-background;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+    animation-timing-function: ease-in-out;
+}
+
+.cabecalho {
+    backdrop-filter: blur(3.99px);
+    background-color: rgba(255, 255, 255, .05);
+}
+
+.cabecalho-itens:hover {
+    color: #fff;
+    transition: 0.5s;
+}
+
+.conteudo {
+    height: 90vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: none;
+}
+
+.minhas-equipes {   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 2%;
+    width: 300px;
+    height: 600px;
+    border-radius: 15px;
+    background-color: #255EF0;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}   
+
+.minhas-equipes-novo {   
+    display: flex;
+    align-items: center;
+    margin-bottom: 2%;
+    width: 80%;
+    text-align: justify;
+    font-size: 10pt;
+    color: #fff;
+}   
+
+.minhas-equipes-titulo {
+    color: #fff;
+    font-size: 36pt;
+    font-weight: 600;
+    text-align: center;
+    padding: 2%;
+    margin-bottom: 1%;
+}
+
+.minhas-equipes-botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 60%;
+    height: 50px;
+    font-size: 12pt;
+    font-weight: 600;
+    color: #255EF0;
+    background-color: #fff;
+    margin-bottom: 4%;
+    border-style: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.09);
+    cursor: pointer;
+}
+
+.perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1000px;
+    height: 600px;
+    border-radius: 15px;
+    background: url(../images/onda.svg) #fff 0px 260px no-repeat;   
+    background-size: 2000px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.03);
+}
+
+/* .perfil form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+} */
+
+.perfil-cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin-top: 2%;
+}
+
+.perfil-span {
+    display: flex;
+    align-items: center;
+}
+
+.perfil-cabecalho-titutlo-1 {
+    font-size: 32pt;
+    margin-right: 10px;
+}
+
+.perfil-cabecalho-titutlo-2 {
+    font-size: 32pt;
+    color: #255EF0;
+}
+
+.perfil-cabecalho-foto {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 15px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25); 
+}
+
+.perfil-cabecalho-botao {   
+    width: 200px;
+    height: 50px;
+    font-size: 16pt;
+    font-weight: 600;
+    color: #fff;
+    background: #255EF0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    border-style: none;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+.perfil-cabecalho-botao:hover {
+    color: #255EF0;
+    background-color: #fff;
+    transition: 0.7s;
+}
+
+.perfil-conteudo {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    height: 60%;
+    background: #e8e8e8;
+    border-radius: 10px;
+}
+
+.perfil-conteudo input {
+    margin-bottom: 1%;
+    padding: 8px;
+    font-size: 16pt;
+    font-weight: 500;
+    border-style: none;
+    background: #dbdbdb67;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.07);
+}
+
+.perfil-conteudo-texto {
+    font-size: 18pt;
+}
+
+.perfil-rodape {
+    width: 90%;
+}
+
+.perfil-rodape-botao-foto {
+    margin-top: 1%;
+}
+
+.perfil-rodape-botao-foto input {
+    background-color: #fff;
+    color: #255EF0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.perfil-rodape input{
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    width: 230px;
+    color: #255EF0;
+    font-size: 12pt;
+    font-weight: 600;
+    background: #E8E8E8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.09);
+    border-radius: 20px;
+    border-style: none;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+.perfil-rodape input:hover {
+    color: #fff;
+    background-color: #1e4bbe;
+    box-shadow: none;
+    transition: 0.7s;
+}
+
+.perfil-rodape-botao-sair {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.perfil-rodape-botao-sair img {
+    position: absolute;
+    padding-right: 10px;
+}

@@ -1,0 +1,318 @@
+body {
+    background-image: url(../images/fundo-cinza.svg);
+    height: 100%;
+}
+
+.sistema {
+    display: flex;
+}
+
+.sistema-func {
+    background: #255EF0;
+    width: 10vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sistema-func-cabecalho {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sistema-func-titulo span {
+    color: #fff;
+    font-size: 12pt;
+    font-weight: 600;
+}
+
+.sistema-func img {
+    height: 50px;
+}
+
+.sistema-func input[type="submit"] {
+    background-color: #fff;
+    border-style: none;
+    padding: 10px;
+    width: 150px;
+    border-radius: 10px;
+    color: #255EF0;
+    font-size: 12pt;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.sistema-func-conteudo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.sistema-func-conteudo input[type="text"] {
+    width: 130px;
+    height: 20px;
+    padding: 4px;
+    font-size: 10pt;
+    border-radius: 20px;
+    border-style: none;
+    outline: none;
+}
+
+.sistema-func-rodape {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.sistema-func-rodape span {
+    color: #fff;
+    font-size: 12pt;
+    font-weight: 500;
+}
+
+.sistema-func-rodape .email {
+    color: #fff;
+    font-size: 10pt;
+    text-decoration: underline;
+}
+
+.sistema-func-rodape a {
+    background-color: #fff;
+    border-style: none;
+    padding: 10px;
+    width: 150px;
+    border-radius: 10px;
+    color: #255EF0;
+    font-size: 12pt;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.sistema-func-caixa {
+    height: 100%;
+}
+
+.sistema-func-caixa form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sistema-tab {
+    width: 90vw;
+    max-height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sistema-tab-linha {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.sistema-conteudo-tabela {
+    display: block;
+    overflow: hidden;
+    overflow-y: scroll;
+    background: #E8E8E8;
+    max-width: 1000px;
+    min-width: 1000px;
+    padding: 12px;
+    border-radius: 15px;
+    margin-bottom: 5%;
+    height: 50%;
+    justify-self: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sistema-conteudo-tabela::-webkit-scrollbar {
+    width: 10px;
+}
+
+.sistema-conteudo-tabela::-webkit-scrollbar-track {
+    background-color: #D9D9D9;
+}
+
+.sistema-conteudo-tabela::-webkit-scrollbar-thumb {
+    background-color: #000;
+}
+
+.sistema-conteudo-tabela table {
+    margin: auto;
+}
+
+.sistema-conteudo-tabela th {
+    width: 1%;
+    padding: 10px;
+    font-size: 10pt;
+}
+
+.sistema-conteudo-tabela tr:nth-child(even) {
+    background-color: #EEEEEE;
+} 
+
+.sistema-conteudo-tabela td {
+    font-size: 10pt;
+    text-align: center;
+}
+
+.sistema-conteudo-tabela img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+}
+
+.sistema-tab-rodape {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 6px 10px 6px 10px;
+    background: #255EF0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+.sistema-tab-rodape form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+.sistema-tab-rodape label {
+    color: #fff;
+    font-size: 12pt;
+    font-weight: 600;
+}
+
+.sistema-tab-rodape input[type="number"] {
+    width: 60px;
+    height: 30px;
+    padding: 4px;
+    font-size: 14pt;
+    border-radius: 20px;
+    border-style: none;
+    outline: none;
+    box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sistema-tab-rodape-busca {
+    background-color: #255EF0;
+    border-style: none;
+    padding: 8px;
+    width: 150px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 12pt;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.sistema-tab-rodape-crud {
+    display: flex;
+    align-items: center;
+}
+
+.sistema-tab-rodape-crud button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #255EF0;
+    border-style: none;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.sistema-tab-rodape img {
+    width: 40px;
+}
+
+.sistema-tab-rodape img:last-child {
+    width: 28px;
+    display: flex;
+    justify-content: center;
+}
+
+.sistema-tab-editar {
+    padding: 2%;
+    background-color: #eeeeee;
+    width: 50%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sistema-tab-criar-equipe {
+    background-color: #eeeeee;
+    width: 50%;
+    border-radius: 15px;
+    box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sistema-tab-criar-equipe input, textarea {
+    width: 99%;
+    margin-bottom: 2%;
+    font-size: 14pt;
+    border-radius: 20px;
+    border-style: none;
+    outline: none;
+    resize: none;
+    box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sistema-tab-editar label {
+    font-size: 16pt;
+}
+
+.sistema-tab-editar input {
+    margin-bottom: 2%;
+    width: 300px;
+    height: 30px;
+    padding: 4px;
+    font-size: 14pt;
+    border-radius: 10px;
+    border-style: none;
+    outline: none;
+    box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sistema-tab-editar input[type="submit"] {
+    background-color: #255EF0;
+    padding: 0%;
+    width: 200px;
+    height: 30px;
+    align-items: center;
+    border-radius: 6px;
+    border: none;
+    color: #fff;
+    font-size: 14pt;
+    font-weight: 600;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.09);
+    transition: 0.5s;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.sistema-editar-salvar {
+    margin-top: 2%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

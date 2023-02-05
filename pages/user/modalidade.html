@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/style.css" type="text/css">
+    <link rel="stylesheet" href="../../js/lib/owlCarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="../../js/lib/owlCarousel/dist/assets/owl.theme.default.min.css">
+    <title>AtletConnect</title>
+</head>
+<body>
+    <header>
+        <div class="cabecalho">
+            <div class="cabecalho-logo">
+                <img src="../../images/placeholder.png" alt="Logo" class="cabecalho-logo" style="width: 50px;" id="cabecalho-logo"> 
+                <span class="cabecalho-texto"> AtletConnect. </span>
+            </div>
+            <ul  style="list-style: none">
+                <li>
+                    <a href="./modalidade.html" class="cabecalho-itens"> Modalidades </a>
+                </li>
+                <li>
+                    <a href="#" class="cabecalho-itens"> Suporte </a>
+                </li>
+                <li>
+                    <a href="./homepage.html" class="cabecalho-itens"> Home </a>
+                </li>
+                <li>
+                    <a href="./perfil.php" class="cabecalho-itens" style="font-weight: 600;"> Meu Perfil </a>
+                </li>
+                <img src="../../images/icone-perfil.svg" alt="Foto de perfil" class="cabecalho-icone-perfil">
+            </ul>
+        </div>
+    </header>
+    <content>
+        <div class="conteudo" style="background-image: none;">
+            <!-- <div class="conteudo-titulo-menor"> Minhas </div> -->
+            <div class="conteudo-titulo-maior" style="margin-bottom: 2%;"> Modalidades. </div>
+        <div class="carrosel">
+                <div class="owl-carousel owl-theme">
+                    <div class="item"> <div class="modalidade-card" id="card-1">  <div class="modalidade-card-faixa"> <a href="./modalidade-esporte.html"> Vôlei </a> </div>
+                    </div> </div>
+                    <div class="item">    <div class="modalidade-card"> 
+                        <div class="modalidade-card-faixa"> Card  </div>
+                    </div> </div>
+                    <div class="item">    <div class="modalidade-card"> 
+                        <div class="modalidade-card-faixa"> Card  </div>
+                    </div> </div>
+                    <div class="item">    <div class="modalidade-card"> 
+                        <div class="modalidade-card-faixa"> Card  </div>
+                    </div> </div>
+                    <div class="item">    <div class="modalidade-card"> 
+                        <div class="modalidade-card-faixa"> Card  </div>
+                    </div> </div>
+                    <div class="item">    <div class="modalidade-card"> 
+                        <div class="modalidade-card-faixa"> Card  </div>
+                    </div> </div>
+                </div>
+            </div>
+            <img src="../../images/placeholder.png" alt="Atleta" class="conteudo-foto-modalidade">
+        </div>
+    </content>
+    <script src="../../js/lib/jquery/jquery.min.js"></script>
+    <script src="../../js/lib/owlCarousel/dist/owl.carousel.min.js"></script>
+    <script type="text/javascript"></script>
+    <script>
+
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            autoWidth: true,
+            responsiveClass: true,
+            autoplay: true,
+            autoplayTimeout: 3500,
+            autoplayHoverPause: false,
+            responsive:{
+                0:{
+                    items:1
+             },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:5
+                }
+            }
+        })
+
+    </script>
+</body>
+</html>
+
+<!--                     
+    <div class="modalidade-card"> 
+        <div class="modalidade-card-faixa"> Card  </div>
+    </div> 
+-->
+
+
+<!--
+    <div class="modalidade-botao">
+        <a href="./perfil.html"> <button class="modalidade-botao-mais"> <img src="../../images/icone-mais-2.svg" alt="Mais equipes"> </a> </button>
+    </div>
+-->
+
+<!--
+    <div class="modalidade-card" id="card-1"> 
+        <a href="./modalidade-esporte.html"> <div class="modalidade-card-faixa"> Vôlei </div> </a>
+    </div>
+-->
